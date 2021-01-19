@@ -17,4 +17,4 @@ jobs:
         settings-path: "${{ github.workspace }}"
     - name: Run maven
       shell: bash
-      run: mvn -DskipTests clean package
+      run: mvn -DskipTests clean site install
