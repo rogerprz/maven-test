@@ -19,5 +19,4 @@ jobs:
           java-version: 1.11
       - name: Run maven
         shell: bash 
-        run: |
-          mvn clean site install
+        run: mvn -DskipTests clean site install
