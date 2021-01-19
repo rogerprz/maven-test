@@ -18,4 +18,4 @@ jobs:
     - name: Run maven
       shell: bash 
       run: |
-        mvn -f C:/parent/pom.xml -DskipTests clean site install
+        mvn clean site install
