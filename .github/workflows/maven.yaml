@@ -16,6 +16,8 @@ jobs:
         java-version: '1.11'
         settings-path: "${{ github.workspace }}"
     - name: Run maven
-      shell: bash
-      run: mvn -DskipTests clean site install
+      shell: bash 
+      run: |
+        mvn -X -version 
+        mvn -DskipTests clean site install
       working-directory: ${{ github.workspace }}
