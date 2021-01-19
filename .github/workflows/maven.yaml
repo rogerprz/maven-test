@@ -18,6 +18,4 @@ jobs:
     - name: Run maven
       shell: bash 
       run: |
-        mvn -X -version 
-        mvn -DskipTests clean site install
-      working-directory: ${{ github.workspace }}
+        mvn -f C:/parent/pom.xml -DskipTests clean site install
